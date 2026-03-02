@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="{% static 'cv_app/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'inicio' %}">Inicio</a>
+    <a href="{% url 'quien_soy' %}">Quién soy</a>
+    <a href="{% url 'hobbies' %}">Hobbies</a>
+    <a href="{% url 'experiencias' %}">Experiencias</a>
+</nav>
+
+<hr>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
